@@ -5,8 +5,8 @@ import java.sql.*;
 public class CRUD {
     
     public static void main(String[] args) throws SQLException {
-        // create();
-        read();
+         create();
+//        read();
         // update();
         // delete();
     }
@@ -49,7 +49,7 @@ public class CRUD {
         try {
             conn = JdbcUtils.getConnection();
             st = conn.createStatement();
-            String sql = "insert into user(name,birthday, money) values ('name1', '1987-01-01', 400) ";
+            String sql = "insert into user(name,birthday, money) values ('B', '1987-01-01', 100) ";
             int i = st.executeUpdate(sql);
             System.out.println("i=" + i);
         } finally {
