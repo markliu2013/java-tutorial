@@ -1,4 +1,4 @@
-package com.zfwhub.tutorial.jdbc;
+package com.zfwhub.tutorial.jdbc.base;
 
 import java.sql.*;
 
